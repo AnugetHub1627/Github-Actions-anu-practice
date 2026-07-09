@@ -27,5 +27,5 @@ jobs:
 
     - name: run test
       run: |
-        python -m pytest addition.py
+        python -m pytest apps/addition.py
     
