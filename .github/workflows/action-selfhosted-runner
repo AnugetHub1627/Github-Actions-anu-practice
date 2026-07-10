@@ -2,8 +2,10 @@
 
 name: my first github actions project
 
-on: [push] 
-
+on: 
+  push:
+    branches: [main]
+  
 jobs:
   build: 
     runs-on: self-hosted
