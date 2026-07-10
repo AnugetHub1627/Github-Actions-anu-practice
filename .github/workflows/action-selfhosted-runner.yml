@@ -2,10 +2,13 @@
 
 name: my first github actions project
 
-on: 
+on:
   push:
-    branches: [main]
-  
+    branches:
+      - main  # Change to your active branch name
+    paths:
+      - '.github/workflows/action-selfhosted-runner.yml' # 🎯 Only runs when THIS file changes
+
 jobs:
   build: 
     runs-on: self-hosted
