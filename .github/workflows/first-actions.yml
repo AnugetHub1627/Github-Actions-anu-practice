@@ -1,7 +1,12 @@
 #test comment again test
 name: my first github actions project
 
-on: [push] 
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/first-actions.yml' 
 
 jobs:
   build: 
